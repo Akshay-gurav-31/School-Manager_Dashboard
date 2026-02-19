@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
 <img src="images/image.png" width="90" alt="School Manager" />
 
@@ -25,8 +25,8 @@ School Manager is a fully client-side dashboard to manage students, teachers, at
 
 | Page | File | Description |
 |------|------|-------------|
-| 🏠 Home | `home.html` | Landing page with hero, features & gallery |
-| 📊 Dashboard | `index.html` | Stats, quick actions & academic calendar |
+| 🏠 Home | `index.html` | Landing page with hero, features & gallery |
+| 📊 Dashboard | `dashboard.html` | Stats, quick actions & academic calendar |
 | 👨‍🎓 Students | `students.html` | Add, view & manage student records |
 | 👨‍🏫 Teachers | `teachers.html` | Faculty management table |
 | 📚 Classes | `classes.html` | Class cards with teacher & student info |
@@ -41,8 +41,8 @@ School Manager is a fully client-side dashboard to manage students, teachers, at
 ```
 school-dashboard/
 │
-├── home.html               ← Landing page
-├── index.html              ← Dashboard
+├── index.html               ← Landing page
+├── dashboard.html              ← Dashboard
 ├── students.html           ← Student management
 ├── teachers.html           ← Teacher management
 ├── classes.html            ← Class management
@@ -79,11 +79,11 @@ school-dashboard/
 
 ```bash
 # Open directly in browser
-open home.html
+open index.html
 
 # Or use VS Code Live Server
-# Right-click home.html → "Open with Live Server"
-# http://127.0.0.1:5500/home.html
+# Right-click index.html → "Open with Live Server"
+# http://127.0.0.1:5500/index.html
 ```
 
 ---
