@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About - School Dashboard</title>
+    <link rel="icon" type="image/png" href="images/image.png" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { "primary": "#1a227f" },
+                    fontFamily: { "sans": ["Inter", "sans-serif"] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .active-nav {
+            background: #1a227f;
+            color: white !important;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900" style="display:flex; height:100vh; overflow:hidden;">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r border-slate-200 flex flex-col shrink-0 shadow-sm"
+        style="height:100vh; overflow-y:auto;">
+        <div class="p-5 flex items-center gap-3 border-b border-slate-100">
+            <img src="images/image.png" alt="School Manager Logo"
+                class="w-11 h-11 rounded-xl object-contain bg-primary/5 p-0.5 shadow" />
+            <div>
+                <h1 class="font-black text-base tracking-tight leading-none text-primary">School Manager</h1>
+                <p class="text-[10px] text-slate-400 font-semibold uppercase tracking-widest mt-0.5">v1.0 Admin</p>
+            </div>
+        </div>
+        <nav class="flex-1 px-4 space-y-1 pt-3">
+            <a href="index.html"
+                class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 transition-colors">
+                <span class="material-symbols-outlined">dashboard</span><span
+                    class="text-sm font-medium">Dashboard</span>
+            </a>
+            <a href="students.html"
+                class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 transition-colors">
+                <span class="material-symbols-outlined">group</span><span class="text-sm font-medium">Students</span>
+            </a>
+            <a href="teachers.html"
+                class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 transition-colors">
+                <span class="material-symbols-outlined">badge</span><span class="text-sm font-medium">Teachers</span>
+            </a>
+            <a href="classes.html"
+                class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 transition-colors">
+                <span class="material-symbols-outlined">menu_book</span><span class="text-sm font-medium">Classes</span>
+            </a>
+            <a href="attendance.html"
+                class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 transition-colors">
+                <span class="material-symbols-outlined">calendar_month</span><span
+                    class="text-sm font-medium">Attendance</span>
+            </a>
+            <a href="results.html"
+                class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 transition-colors">
+                <span class="material-symbols-outlined">analytics</span><span class="text-sm font-medium">Results</span>
+            </a>
+            <a href="about.html" class="flex items-center gap-3 px-4 py-3 rounded-xl active-nav font-medium shadow-md">
+                <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">info</span><span
+                    class="text-sm">About</span>
+            </a>
+        </nav>
+        <!-- Sidebar Bottom -->
+        <div class="px-4 py-2 border-t border-slate-100">
+            <a href="home.html"
+                class="flex items-center gap-2 px-3 py-2.5 rounded-xl text-slate-500 hover:bg-slate-50 transition-colors text-xs font-bold">
+                <span class="material-symbols-outlined text-[18px]">home</span> Back to Home
+            </a>
+            <p class="text-center text-[10px] font-bold text-slate-300 uppercase tracking-widest mt-1 pb-1">v1.0 Stable
+                Build</p>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col bg-slate-50" style="height:100vh; overflow-y:auto;">
+        <header class="bg-white border-b border-slate-200 px-8 py-10 flex flex-col items-center text-center">
+            <div class="w-16 h-16 bg-indigo-50 rounded-3xl flex items-center justify-center text-primary mb-4">
+                <span class="material-symbols-outlined text-4xl" style="font-variation-settings:'FILL' 1">stars</span>
+            </div>
+            <h2 class="text-3xl font-black text-slate-900 tracking-tight">About School Manager</h2>
+            <p class="text-slate-500 mt-2 max-w-lg text-lg">A modern, clean, and efficient way to handle school
+                administration.</p>
+        </header>
+
+        <div class="p-8 max-w-4xl mx-auto space-y-8 pb-16">
+            <!-- Vision -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm">
+                    <h3 class="font-bold text-slate-800 text-lg mb-3">Our Objective</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">This project aims to simplify the complex
+                        workflows of educational institutes by providing a clutter-free interface for data management.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm">
+                    <h3 class="font-bold text-slate-800 text-lg mb-3">Core Features</h3>
+                    <ul class="text-sm text-slate-500 space-y-2">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                            Dynamic Data Entries</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                            Interactive Dashboard</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                            Secure Records</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="rounded-3xl p-8 text-white"
+                style="background: linear-gradient(135deg, #1a227f 0%, #2d3a9e 60%, #4f5ed1 100%);">
+                <h3 class="text-xl font-bold mb-6">Built with Modern Tech</h3>
+                <div class="flex flex-wrap gap-4">
+                    <div class="bg-white/15 px-5 py-4 rounded-2xl border border-white/20 backdrop-blur-md">
+                        <p class="text-[10px] font-black uppercase text-indigo-200 mb-1 leading-none">Styling</p>
+                        <p class="font-bold text-white">Tailwind CSS</p>
+                    </div>
+                    <div class="bg-white/15 px-5 py-4 rounded-2xl border border-white/20 backdrop-blur-md">
+                        <p class="text-[10px] font-black uppercase text-indigo-200 mb-1 leading-none">Logic</p>
+                        <p class="font-bold text-white">Vanilla JS</p>
+                    </div>
+                    <div class="bg-white/15 px-5 py-4 rounded-2xl border border-white/20 backdrop-blur-md">
+                        <p class="text-[10px] font-black uppercase text-indigo-200 mb-1 leading-none">Icons</p>
+                        <p class="font-bold text-white">Google Material</p>
+                    </div>
+                    <div class="bg-white/15 px-5 py-4 rounded-2xl border border-white/20 backdrop-blur-md">
+                        <p class="text-[10px] font-black uppercase text-indigo-200 mb-1 leading-none">Structure</p>
+                        <p class="font-bold text-white">HTML5</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Developer -->
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex items-center gap-6">
+                <div
+                    class="w-16 h-16 rounded-2xl bg-primary flex items-center justify-center text-white font-black text-2xl">
+                    AG</div>
+                <div>
+                    <h3 class="font-bold text-slate-800 text-xl">Akshay Gurav</h3>
+                    <p class="text-slate-500 text-sm">Lead Developer & Designer</p>
+                    <p class="text-slate-400 text-xs mt-1">akshaygurav416115@gmail.com</p>
+                    <div class="flex gap-4 mt-3">
+                        <a href="#"
+                            class="text-[10px] font-bold uppercase text-primary tracking-widest hover:underline">Portfolio</a>
+                        <a href="#"
+                            class="text-[10px] font-bold uppercase text-primary tracking-widest hover:underline">GitHub</a>
+                        <a href="#"
+                            class="text-[10px] font-bold uppercase text-primary tracking-widest hover:underline">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer
+            class="mt-auto px-8 py-6 border-t border-slate-200 bg-white text-center text-[10px] text-slate-400 font-bold uppercase tracking-[0.2em]">
+            Developed by Akshay Gurav Â· Â© 2026
+        </footer>
+    </main>
+</body>
+
+</html>
